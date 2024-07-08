@@ -19,8 +19,8 @@ const RecentProjects = () => {
             key={item.id}
           >
             <PinContainer
-              title="/ui.aceternity.com"
-              href="https://twitter.com/mannupaaji"
+              title="Repository"
+              href={item.link}
             >
               <div className="relative flex gap-x-24 gap-y-8 items-center justify-center sm:h-[40vh] h-[30vh] sm:w-[540px] w-[80vw] bg-[#10132E] overflow-hidden lg:h-[30vh] mb-10">
                 <div
@@ -67,7 +67,7 @@ const RecentProjects = () => {
 
                 <div className="flex justify-center items-center">
                   <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Check Live Site
+                    <a target="_blank" href={item.live}>Check Live Site</a>
                   </p>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>
