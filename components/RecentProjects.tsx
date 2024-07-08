@@ -7,22 +7,22 @@ import { PinContainer } from "./ui/PinContainer";
 
 const RecentProjects = () => {
   return (
-    <div className="py-20">
+    <div id="projects" className="py-20">
       <h1 className="heading">
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
+      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8  mt-10">
         {projects.map((item) => (
           <div
-            className="lg:min-h-[32.5rem] h-[25rem] flex items-center bg justify-center sm:w-96 w-[80vw]"
+            className="lg:min-h-[32.5rem] sm:w-[540px]  sm:h-[41rem] h-[25rem] flex items-center bg justify-center w-[80vw]"
             key={item.id}
           >
             <PinContainer
               title="/ui.aceternity.com"
               href="https://twitter.com/mannupaaji"
             >
-              <div className="relative flex gap-x-24 gap-y-8 items-center justify-center sm:w-96 w-[80vw] bg-[#10132E] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
+              <div className="relative flex gap-x-24 gap-y-8 items-center justify-center sm:h-[40vh] h-[30vh] sm:w-[540px] w-[80vw] bg-[#10132E] overflow-hidden lg:h-[30vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
