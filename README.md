@@ -1,6 +1,5 @@
 # Portfolio Website - Ayush
 
-![Portfolio Preview](https://ayush-delta.vercel.app/preview.png)
 
 ## Introduction
 
