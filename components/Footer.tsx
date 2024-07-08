@@ -2,7 +2,7 @@ import React from 'react'
 import { FaLocationArrow } from 'react-icons/fa'
 import MagicButton from './ui/MagicButton'
 import { socialMedia } from '@/data'
-
+import Image from 'next/image'
 const Footer = () => {
   return (
     <footer className='w-full pt-20 pb-10' id='contact'>
@@ -25,7 +25,9 @@ const Footer = () => {
             {socialMedia.map((profile)=>(
               <a href={profile.link} target='_blank'>
                 <div key={profile.id} className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg bg-opacity-75 bg-black-200 rounded-lg border border-black-300 ">
-                    <img src={profile.img} alt="" />
+                    <Image
+              width="100"
+              height="100" src={profile.img} alt="" />
                 </div>
                 </a>
             ))}
