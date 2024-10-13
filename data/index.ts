@@ -96,6 +96,24 @@ export const projects = [
       link: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_webdevelopment-mnnit-ece-activity-7147646116480626688-OB98?utm_source=share&utm_medium=member_desktop",
       live: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_webdevelopment-mnnit-ece-activity-7147646116480626688-OB98?utm_source=share&utm_medium=member_desktop",
   },
+  {
+      id: 3,
+      title: "Real Time Chat App",
+      des: "Developed a Real time chat app using Socket.io ",
+      img: "/p4.jpg",
+      iconLists: ["/express.svg", "/node.svg", "/mongo.svg", "/js.svg"],
+      live: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_webdevelopment-realtimechat-socketio-activity-7236120270309105664-dxlu?utm_source=share&utm_medium=member_desktop",
+      link: "https://github.com/Ayush5071/chatApp",
+  },
+  {
+      id: 3,
+      title: "WebRTC Video Calling App",
+      des: "Developed 3-4 visually appealing landing pages for different websites, showcasing modern design and responsive layouts.",
+      img: "/p5.png",
+      iconLists: ["/express.svg", "/node.svg", "/mongo.svg", "/js.svg"],
+      link: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_webrtc-videocallapp-react-activity-7238621089780670466-8lvv?utm_source=share&utm_medium=member_desktop",
+      live: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_webrtc-videocallapp-react-activity-7238621089780670466-8lvv?utm_source=share&utm_medium=member_desktop",
+  },
 ];
 
 
