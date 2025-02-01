@@ -25,7 +25,7 @@ export default function Home() {
         <Footer/>
       </div>
       <motion.div
-        className="fixed bottom-5 right-5 bg-[#CBACF9] rounded-full p-4 cursor-pointer shadow-lg"
+        className="fixed bottom-5 right-5 bg-[#a166f8] rounded-full p-4 cursor-pointer shadow-lg"
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.8 }}
         animate={{ 

@@ -8,7 +8,7 @@ export const navItems = [
 export const gridItems = [
   {
       id: 1,
-      title: "I prioritize collaboration and open communication",
+      title: "I believe in fostering teamwork and maintaining transparency in all communications.",
       description: "",
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
       imgClassName: "w-full h-full",
@@ -48,7 +48,7 @@ export const gridItems = [
   },
   {
       id: 5,
-      title: "Currently building a JS Animation library",
+      title: "Building QuantsProgrammer - a learning platform that contains Roadmaps for various technologies.",
       description: "The Inside Scoop",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -74,6 +74,7 @@ export const projects = [
       title: "KISAAN - Farm Management System",
       des: "A farm management system using Express, Node.js, and MongoDB, integrated with an NLP chatbot using the bag-of-words model.",
       img: "/kisaan.jpg",
+      hosted:"ghgh",
       iconLists: ["/express.svg", "/node.svg", "/mongo.svg", "/js.svg"],
       link: "https://github.com/Ayush5071/Agro_Techies",
       live:"https://www.linkedin.com/posts/ayush-tiwari-84a823281_empowering-kisaans-with-next-gen-agritech-activity-7189592418441216000-oWNh?utm_source=share&utm_medium=member_desktop"
@@ -83,6 +84,7 @@ export const projects = [
       title: "E-commerce Website",
       des: "A fully featured e-commerce website with a user-friendly interface and secure payment integration.",
       img: "/p4.svg",
+      hosted:"",
       iconLists: ["/js.svg", "/node.svg", "/mongo.svg", "/express.svg"],
       link: "https://github.com/Ayush5071/Pixel-Paladins",
       live: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_hogwarts-haul-where-fantasy-meets-reality-activity-7177179704649555968-AMnW?utm_source=share&utm_medium=member_desktop"
@@ -92,6 +94,7 @@ export const projects = [
       title: "Landing Pages for Various Websites",
       des: "Developed 3-4 visually appealing landing pages for different websites, showcasing modern design and responsive layouts.",
       img: "/p3.svg",
+      hosted:"",
       iconLists: ["/html.svg", "/css.svg", "/js.svg", "/react.svg"],
       link: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_webdevelopment-mnnit-ece-activity-7147646116480626688-OB98?utm_source=share&utm_medium=member_desktop",
       live: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_webdevelopment-mnnit-ece-activity-7147646116480626688-OB98?utm_source=share&utm_medium=member_desktop",
@@ -100,6 +103,7 @@ export const projects = [
       id: 3,
       title: "Real Time Chat App",
       des: "Developed a Real time chat app using Socket.io ",
+      hosted:"",
       img: "/p4.jpg",
       iconLists: ["/express.svg", "/node.svg", "/mongo.svg", "/js.svg"],
       live: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_webdevelopment-realtimechat-socketio-activity-7236120270309105664-dxlu?utm_source=share&utm_medium=member_desktop",
@@ -110,6 +114,7 @@ export const projects = [
       title: "WebRTC Video Calling App",
       des: "Developed 3-4 visually appealing landing pages for different websites, showcasing modern design and responsive layouts.",
       img: "/p5.png",
+      hosted:"",
       iconLists: ["/express.svg", "/node.svg", "/mongo.svg", "/js.svg"],
       link: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_webrtc-videocallapp-react-activity-7238621089780670466-8lvv?utm_source=share&utm_medium=member_desktop",
       live: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_webrtc-videocallapp-react-activity-7238621089780670466-8lvv?utm_source=share&utm_medium=member_desktop",
@@ -120,14 +125,38 @@ export const projects = [
 export const workExperience = [
   {
       id: 1,
-      title: "Winner of Dev or Die",
-      desc: "Annual Technical event of NIT ALLAHABAD for fullstack Web-development.",
+      title: "Winner of Innodev 2k25",
+      desc: "Achieved 1st place among 80+ teams in a web development competition at NIT Allahabad.",
       className: "md:col-span-2",
   },
   {
       id: 2,
-      title: "Third Prize in Quintathalon",
-      desc: "Mock Placement annualn event of NIT ALLAHABAD to get the feel of placements.",
+      title: "Third Prize in Quintathalon 2k25",
+      desc: "Secured 3rd place in a mock placement event, which included an online assessment and technical interview.",
       className: "md:col-span-2",
-  }
+  },
+  {
+      id: 3,
+      title: "Winner of Dev or Die",
+      desc: "Won the annual technical event for full-stack web development at NIT Allahabad.",
+      className: "md:col-span-2",
+  },
+  {
+      id: 4,
+      title: "Third Prize in Quintathalon",
+      desc: "Awarded 3rd place in the annual mock placement event at NIT Allahabad, designed to simulate real placement processes.",
+      className: "md:col-span-2",
+  },
+  {
+      id: 5,
+      title: "Leetcode Rank 1230",
+      desc: "Ranked 1230 out of 32,000 participants, achieving a maximum rating of 1760.",
+      className: "md:col-span-2",
+  },
+  {
+      id: 6,
+      title: "10k Followers on LinkedIn and 1k Subscribers on YouTube",
+      desc: "Gained a significant following by sharing my tech journey and projects, reaching 10k followers on LinkedIn and 1k subscribers on YouTube.",
+      className: "md:col-span-2",
+  },
 ];
