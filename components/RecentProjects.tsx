@@ -1,88 +1,69 @@
-"use client";
-
-import { FaLocationArrow } from "react-icons/fa6";
-
 import { projects } from "@/data";
-import { PinContainer } from "./ui/PinContainer";
 import Image from "next/image";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
-const RecentProjects = () => {
+export function RecentProjects() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
-    <div id="projects" className="py-20">
-      <h1 className="heading">
-        A small selection of{" "}
-        <span className="text-purple">recent projects</span>
-      </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8  mt-10">
-        {projects.map((item) => (
-          <div
-            className="lg:min-h-[32.5rem] sm:w-[540px]  sm:h-[41rem] h-[25rem] flex items-center bg justify-center w-[80vw]"
-            key={item.id}
+    <div className="container mx-auto px-4 mt-8 md:mt-16">
+      <div ref={ref} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {projects.map((project) => (
+          <motion.div
+            key={project.id}
+            className="mb-8"
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.5, delay: project.id * 0.1 }}
           >
-            <PinContainer
-              title="Repository"
-              href={item.link}
-            >
-              <div className="relative flex gap-x-24 gap-y-8 items-center justify-center sm:h-[40vh] h-[30vh] sm:w-[540px] w-[80vw] bg-[#10132E] overflow-hidden lg:h-[30vh] mb-10">
-                <div
-                  className="relative w-full h-full overflow-hidden lg:rounded-3xl"
-                  style={{ backgroundColor: "#13162D" }}
-                >
-                  <Image
-              width="100"
-              height="100" src="/bg.png" alt="bgimg" className="w-full h-full object-cover" />
+            <div className="relative shadow-lg shadow-black-300 overflow-hidden h-full rounded-2xl transition duration-200 group hover:shadow-xl border border-gray-700">
+              <div className="absolute inset-0 rounded-2xl group-hover:shadow-[0_0_20px_10px_rgba(255,0,255,0.6)] transition-shadow duration-200"></div>
+              <div className="p-4 relative">
+                <h2 className="font-bold my-4 text-lg text-white">
+                  {project.title}
+                </h2>
+                <h2 className="font-normal my-4 text-sm text-gray-200">
+                  {project.des}
+                </h2>
+                <div className="flex flex-row justify-between items-center mt-10">
+                  <a href={project.link} className="text-sm text-gray-200">
+                    GitHub
+                  </a>
+                  <a href={project.live} className="relative z-10 px-6 py-2 bg-black text-white font-bold rounded-xl block text-xs">
+                    Live Demo
+                  </a>
                 </div>
-                <Image
-              width="100"
-              height="100"
-                  src={item.img}
-                  alt="cover"
-                  className="w-full h-full object-cover z-10 absolute bottom-0"
-                />
-              </div>
-
-              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
-                {item.title}
-              </h1>
-
-              <p
-                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
-                style={{
-                  color: "#BEC1DD",
-                  margin: "1vh 0",
-                }}
-              >
-                {item.des}
-              </p>
-
-              <div className="flex items-center justify-between mt-7 mb-3">
-                <div className="flex items-center">
-                  {item.iconLists.map((icon, index) => (
-                    <div
-                      key={index}
-                      className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
-                      style={{
-                        transform: `translateX(-${5 * index + 2}px)`,
-                      }}
-                    >
-                      <Image width="100" height="100" src={icon} alt="icon5" className="p-2" />
-                    </div>
+                <div className="flex space-x-2 mt-4">
+                  {project.iconLists.map((icon, index) => (
+                    <Image key={index} src={icon} height="20" width="20" alt="icon" />
                   ))}
                 </div>
-
-                <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    <a target="_blank" href={item.live}>Check Live Site</a>
-                  </p>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
-                </div>
               </div>
-            </PinContainer>
-          </div>
+            </div>
+          </motion.div>
         ))}
       </div>
     </div>
   );
-};
+}
 
-export default RecentProjects;
+const TitleComponent = ({
+  title,
+  avatar,
+}: {
+  title: string;
+  avatar: string;
+}) => (
+  <div className="flex space-x-2 items-center">
+    <Image
+      src={avatar}
+      height="20"
+      width="20"
+      alt="thumbnail"
+      className="rounded-full border-2 border-white"
+    />
+    <p className="text-white">{title}</p>
+  </div>
+);

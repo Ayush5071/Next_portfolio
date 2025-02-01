@@ -123,26 +123,11 @@ export const workExperience = [
       title: "Winner of Dev or Die",
       desc: "Annual Technical event of NIT ALLAHABAD for fullstack Web-development.",
       className: "md:col-span-2",
-      thumbnail: "/exp1.svg",
   },
   {
       id: 2,
       title: "Third Prize in Quintathalon",
       desc: "Mock Placement annualn event of NIT ALLAHABAD to get the feel of placements.",
       className: "md:col-span-2",
-      thumbnail: "/exp2.svg",
   }
-];
-
-export const socialMedia = [
-  {
-      id: 1,
-      img: "/git.svg",
-      link: "https://github.com/Ayush5071"
-  },
-  {
-      id: 3,
-      img: "/link.svg",
-      link: "https://www.linkedin.com/in/ayush-tiwari-84a823281/"
-  },
 ];
