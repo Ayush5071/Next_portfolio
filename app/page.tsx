@@ -1,6 +1,7 @@
 "use client"
+import Achievement from "@/components/Achievement";
 import Approach from "@/components/Approach";
-import Experience from "@/components/Experience";
+import { Experience } from "@/components/Experience";
 import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
@@ -9,6 +10,7 @@ import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { navItems } from "@/data";
 import { motion } from "framer-motion";
 import { FaDownload } from "react-icons/fa";
+
 
 
 
@@ -21,6 +23,7 @@ export default function Home() {
         <Grid/>
         <RecentProjects/>
         <Experience/>
+        <Achievement/>
         <Approach/>
         <Footer/>
       </div>
@@ -37,7 +40,7 @@ export default function Home() {
           boxShadow: { duration: 1.5, yoyo: Infinity, ease: "easeInOut" },
         }}
       >
-        <a href="/path/to/resume.pdf" download>
+        <a href="/download/resume.pdf" download>
           <FaDownload className="text-white" />
         </a>
       </motion.div>

@@ -45,7 +45,7 @@ const Footer = () => {
                     </div>
                 </a>
             </div>
-            <p className='md:text-base text-sm md:font-normal font-light mt-5 md:mt-0 text-center'>
+            <p className='md:text-base text-xs md:font-normal font-light mt-5 md:mt-0 text-center'>
                 Copyright © 2024 Ayush Tiwari x <a href="https://quantsprogrammer.vercel.app" target='_blank' className='underline'>QuantsProgrammer</a>
             </p>
         </div>

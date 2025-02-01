@@ -1,3 +1,6 @@
+import { desc } from "motion/react-client";
+import { title } from "process";
+
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
@@ -179,4 +182,56 @@ export const workExperience = [
       desc: "Gained a significant following by sharing my tech journey and projects, reaching 10k followers on LinkedIn and 1k subscribers on YouTube.",
       className: "md:col-span-2",
   },
+];
+
+
+export const Experiences = [
+  {
+    id: 1,
+    title: "Frontend Developer of Culrav Avishkar 2k25",
+    desc: "Developed the frontend of the official website for Culrav Avishkar 2k25, the annual cultural and technical fest of NIT Allahabad.",
+    skills: ["React", "Tailwind CSS", "GSAP", "Responsive Design"],
+    github: "",
+    linkedin: "",
+  },
+  {
+    id: 2,
+    title: "Frontend Developer for Weekend of Code Website",
+    desc: "Developed the frontend for the Weekend of Code website, a tech event organized by the CC Club.",
+    skills: ["React", "Tailwind CSS", "Next.js", "TypeScript"],
+    github: "",
+    linkedin: "",
+  },
+  {
+    id: 3,
+    title: "Created Official Website for Green Club MNNIT",
+    desc: "Developed the official website for the Green Club MNNIT using GSAP, Framer Motion, Next.js, and TypeScript.",
+    skills: ["GSAP", "Framer Motion", "Next.js", "TypeScript"],
+    github: "",
+    linkedin: "",
+  },
+  {
+    id: 4,
+    title: "Full Stack Developer for Quants Programmer",
+    desc: "Created a full stack application for Quants Programmer, an initiative to guide students in the tech domain.",
+    skills: ["Next.js", "MongoDB","Tailwindcss", "Typescript"],
+    github: "",
+    linkedin: "",
+  },
+  {
+    id: 5,
+    title: "Contributor to User Dashboard for CodeHub Website",
+    desc: "Contributed to creating the User Dashboard for the CodeHub website, the official website of the CC Club.",
+    skills: ["React", "Node.js", "Express", "MongoDB"],
+    github: "",
+    linkedin: "",
+  },
+  {
+    id: 6,
+    title: "Web Developer at Enactus",
+    desc: "Created the frontend and integrated the payment gateway in the official website of Enactus MNNIT.",
+    skills: ["React", "Express", "Tailwind CSS", "GSAP"],
+    github: "",
+    linkedin: "",
+  }
 ];

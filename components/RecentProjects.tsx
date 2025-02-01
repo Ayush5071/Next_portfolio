@@ -9,7 +9,7 @@ export function RecentProjects() {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <div className="container mx-auto px-4 mt-8 md:mt-16">
+    <div id="projects" className="container mx-auto px-4 mt-12 md:mt-16">
       <h1 className="heading">
         Projects{" "}
         <span className="text-purple">Showcase</span>
