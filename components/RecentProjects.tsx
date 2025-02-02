@@ -33,7 +33,7 @@ export function RecentProjects() {
                   {project.des}
                 </h2>
                 <div className="flex justify-between items-center mt-4">
-                  <div className="flex space-x-2">
+                  <div className="flex space-x-[2px]">
                     {project.iconLists.map((icon, index) => (
                       <Image key={index} src={icon} height="20" width="20" alt="icon" />
                     ))}

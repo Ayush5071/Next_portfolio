@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-col items-center">
             <h1 className='heading lg:max-w-[45vw] '>Excited to collaborate <span className='text-purple'>and</span> bring your ideas to life?</h1>
             <p className='text-white-200 md:mt-10 my-5 text-center'>Reach out to me, and let&apos;s explore how I can contribute to your projects and help achieve your goals.</p>
-            <a href="mailto:ayusht5071@gmail.com" aria-label="Contact via email">
+            <a href="mailto:ayusht9919@gmail.com" aria-label="Contact via email">
               <MagicButton
                 title="Let's get in touch"
                 icon={<FaLocationArrow />}
