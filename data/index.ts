@@ -135,7 +135,7 @@ export const projects = [
     des: "Developed a video transcoding app using FFmpeg that uploads a video and breaks it into chunks.",
     img: "/p5.png",
     hosted: "",
-    iconLists: ["/express.svg", "/node.svg", "/mongo.svg", "/js.svg", "/ffmpeg.svg"],
+    iconLists: ["/express.svg", "/node.svg", "/mongo.svg", "/js.svg"],
     link: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_excited-to-unveil-my-latest-creation-activity-7253086498621644800-UayK?utm_source=share&utm_medium=member_desktop&rcm=ACoAAESkqvoBH6PYTNow6d35qEuxga6jIDGFx64",
     live: "https://github.com/Ayush5071/Video-Transcoding-ffmpeg",
   },
