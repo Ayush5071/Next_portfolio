@@ -72,9 +72,61 @@
   }
   body {
     @apply bg-background text-foreground;
+    cursor: none; /* Hide default cursor */
   }
   button {
     @apply active:outline-none;
+  }
+  
+  /* Custom cursor styles */
+  .custom-cursor {
+    cursor: none;
+  }
+  
+  /* Ensure interactive elements still work with custom cursor */
+  a, button, [role="button"], .cursor-pointer {
+    cursor: none;
+  }
+  
+  /* Smooth cursor transitions */
+  .cursor-trail {
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+  }
+  
+  /* Enhanced glow effects */
+  .cursor-glow {
+    filter: drop-shadow(0 0 10px rgba(6, 182, 212, 0.4));
+  }
+  
+  /* Custom Scrollbar Design */
+  ::-webkit-scrollbar {
+    width: 6px;
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: linear-gradient(180deg, rgba(30, 41, 59, 0.1) 0%, rgba(15, 23, 42, 0.2) 100%);
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #3b82f6 0%, #8b5cf6 50%, #06b6d4 100%);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.3);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #2563eb 0%, #7c3aed 50%, #0891b2 100%);
+    box-shadow: 0 0 12px rgba(59, 130, 246, 0.5);
+  }
+  
+  /* Firefox Custom Scrollbar */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: #3b82f6 transparent;
   }
 }
 
@@ -85,6 +137,14 @@
 
   .black-gradient {
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
+  }
+
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .transform-gpu {
+    transform: translateZ(0);
   }
 }
 

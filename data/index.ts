@@ -3,6 +3,7 @@ export const navItems = [
   { name: "Projects", link: "#projects" },
   { name: "Achievements", link: "#achievements" },
   { name: "Contact", link: "#contact" },
+  { name: "Profile", link: "/about" },
 ];
 
 export const gridItems = [
@@ -75,7 +76,7 @@ export const projects = [
     des: "A comprehensive platform offering detailed and structured roadmaps to help users master various technologies efficiently.",
     img: "/quantsprogrammer.jpg",
     hosted: "https://liveproject.com",
-    iconLists: ["/nextjs.png","/TypeScript.svg", "/mongo.svg", "/node.svg","/express.svg", "/gsap.svg", "/tailwindcss.svg"],
+    skills: ["Next.js", "TypeScript", "MongoDB", "Node.js", "Express", "GSAP", "Tailwind CSS"],
     link: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_quantsprogrammer-turning-dreams-into-digital-activity-7279265377153335296-nMto?utm_source=share&utm_medium=member_desktop&rcm=ACoAAESkqvoBH6PYTNow6d35qEuxga6jIDGFx64",
     live: "https://quantsprogrammer.vercel.app",
   },
@@ -85,7 +86,7 @@ export const projects = [
     des: "An application designed for creating ads, facilitating live auctions, and enabling real-time chat to assist college users.",
     img: "/campusx.jpg",
     hosted: "https://liveproject.com",
-    iconLists: ["/nextjs.png", "/express.svg", "/mongo.svg", "/tailwindcss.svg", "/node.svg"],
+    skills: ["Next.js", "Express", "MongoDB", "Tailwind CSS", "Node.js"],
     link: "https://github.com/Ayush5071/Web_Stark",
     live: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_campus-x-the-winning-project-of-innodev-activity-7263876541317603328-2cGr?utm_source=share&utm_medium=member_desktop&rcm=ACoAAESkqvoBH6PYTNow6d35qEuxga6jIDGFx64"
   },
@@ -95,7 +96,7 @@ export const projects = [
     des: "A farm management system using Express, Node.js, and MongoDB, integrated with an NLP chatbot using the bag-of-words model.",
     img: "/kisaan.jpg",
     hosted: "ghgh",
-    iconLists: ["/express.svg", "/node.svg", "/mongo.svg", "/js.svg"],
+    skills: ["Express", "Node.js", "MongoDB", "JavaScript"],
     link: "https://github.com/Ayush5071/Agro_Techies",
     live: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_empowering-kisaans-with-next-gen-agritech-activity-7189592418441216000-oWNh?utm_source=share&utm_medium=member_desktop"
   },
@@ -105,7 +106,7 @@ export const projects = [
     des: "A fully featured e-commerce website with a user-friendly interface and secure payment integration.",
     img: "/p4.svg",
     hosted:"",
-    iconLists: ["/js.svg", "/node.svg", "/mongo.svg", "/express.svg"],
+    skills: ["JavaScript", "Node.js", "MongoDB", "Express"],
     link: "https://github.com/Ayush5071/Pixel-Paladins",
     live: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_hogwarts-haul-where-fantasy-meets-reality-activity-7177179704649555968-AMnW?utm_source=share&utm_medium=member_desktop"
   },
@@ -115,7 +116,7 @@ export const projects = [
     des: "Developed 3-4 visually appealing landing pages for different websites, showcasing modern design and responsive layouts.",
     img: "/p3.svg",
     hosted:"",
-    iconLists: ["/html.svg", "/css.svg", "/js.svg", "/react.svg"],
+    skills: ["HTML", "CSS", "JavaScript", "React"],
     link: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_webdevelopment-mnnit-ece-activity-7147646116480626688-OB98?utm_source=share&utm_medium=member_desktop",
     live: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_webdevelopment-mnnit-ece-activity-7147646116480626688-OB98?utm_source=share&utm_medium=member_desktop",
   },
@@ -125,7 +126,7 @@ export const projects = [
     des: "Developed a Real time chat app using Socket.io ",
     hosted:"",
     img: "/p4.jpg",
-    iconLists: ["/express.svg", "/node.svg", "/mongo.svg", "/js.svg"],
+    skills: ["Express", "Node.js", "MongoDB", "JavaScript"],
     live: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_webdevelopment-realtimechat-socketio-activity-7236120270309105664-dxlu?utm_source=share&utm_medium=member_desktop",
     link: "https://github.com/Ayush5071/chatApp",
   },
@@ -135,7 +136,7 @@ export const projects = [
     des: "Developed a video transcoding app using FFmpeg that uploads a video and breaks it into chunks.",
     img: "/p5.png",
     hosted: "",
-    iconLists: ["/express.svg", "/node.svg", "/mongo.svg", "/js.svg"],
+    skills: ["Express", "Node.js", "MongoDB", "JavaScript"],
     link: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_excited-to-unveil-my-latest-creation-activity-7253086498621644800-UayK?utm_source=share&utm_medium=member_desktop&rcm=ACoAAESkqvoBH6PYTNow6d35qEuxga6jIDGFx64",
     live: "https://github.com/Ayush5071/Video-Transcoding-ffmpeg",
   },
@@ -196,6 +197,8 @@ export const Experiences = [
     skills: ["React", "Tailwind CSS", "GSAP", "Responsive Design"],
     github: "https://github.com/IAMAmanRaj/culrav-avishkar-2k24",
     linkedin: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_culravavishkar-webdevelopment-activity-7262153499658866688-8DPy?utm_source=share&utm_medium=member_desktop&rcm=ACoAAESkqvoBH6PYTNow6d35qEuxga6jIDGFx64",
+    video: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    role: "Led the frontend development, implemented animations, and ensured responsive design.",
   },
   {
     id: 2,
@@ -204,6 +207,8 @@ export const Experiences = [
     skills: ["React", "Tailwind CSS", "Next.js", "TypeScript"],
     github: "https://weekendofcode.computercodingclub.in/",
     linkedin: "https://weekendofcode.computercodingclub.in/",
+    video: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    role: "Built the UI and integrated event features for the tech event.",
   },
   {
     id: 3,
@@ -212,6 +217,8 @@ export const Experiences = [
     skills: ["GSAP", "Framer Motion", "Next.js", "TypeScript"],
     github: "https://github.com/Ayush5071/GreenClubMNNIT",
     linkedin: "https://green-club-mnnit.vercel.app",
+    video: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    role: "Handled animations and frontend logic for the club website.",
   },
   {
     id: 4,
@@ -220,6 +227,8 @@ export const Experiences = [
     skills: ["Next.js", "MongoDB","Tailwindcss", "Typescript"],
     github: "#",
     linkedin: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_quantsprogrammer-turning-dreams-into-digital-activity-7279265377153335296-nMto?utm_source=share&utm_medium=member_desktop&rcm=ACoAAESkqvoBH6PYTNow6d35qEuxga6jIDGFx64",
+    video: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    role: "Developed both frontend and backend, managed deployment.",
   },
   {
     id: 5,
@@ -228,6 +237,8 @@ export const Experiences = [
     skills: ["React", "Node.js", "Express", "MongoDB"],
     github: "#",
     linkedin: "https://www.linkedin.com/posts/link-aditya-rai_coding-programming-opensource-activity-7281977400626761729-lovd?utm_source=share&utm_medium=member_desktop&rcm=ACoAAESkqvoBH6PYTNow6d35qEuxga6jIDGFx64",
+    video: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    role: "Implemented dashboard features and contributed to backend APIs.",
   },
   {
     id: 6,
@@ -236,5 +247,61 @@ export const Experiences = [
     skills: ["React", "Express", "Tailwind CSS", "GSAP"],
     github: "https://enactus-mnnit2k25.netlify.app",
     linkedin: "https://enactus-mnnit2k25.netlify.app",
+    video: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    role: "Developed frontend and integrated payment gateway.",
   }
 ];
+
+export const extracurricularActivities = [
+  {
+    title: "Technical Clubs",
+    activities: [
+      {
+        name: "Coding Club",
+        role: "Core Member",
+        duration: "2022 - Present",
+        description: "Organized coding competitions and workshops, mentored junior members in web development"
+      },
+      {
+        name: "Robotics Club",
+        role: "Member",
+        duration: "2021 - 2022",
+        description: "Participated in robotics competitions and worked on automation projects"
+      }
+    ]
+  },
+  {
+    title: "Hackathons & Competitions",
+    activities: [
+      {
+        name: "HackNITP 3.0",
+        role: "Winner",
+        duration: "2023",
+        description: "Developed a full-stack application for campus resource management"
+      },
+      {
+        name: "CodeChef Contest",
+        role: "Top 100",
+        duration: "2022",
+        description: "Competed in multiple coding contests, achieved top 100 rank"
+      }
+    ]
+  },
+  {
+    title: "Community & Leadership",
+    activities: [
+      {
+        name: "Student Council",
+        role: "Technical Head",
+        duration: "2022 - 2023",
+        description: "Led technical initiatives and organized tech events for the college"
+      },
+      {
+        name: "Open Source Contributor",
+        role: "Contributor",
+        duration: "2022 - Present",
+        description: "Contributed to various open-source projects on GitHub"
+      }
+    ]
+  }
+]
