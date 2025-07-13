@@ -278,7 +278,7 @@ const Footer = () => {
               © 2025 Ayush Tiwari. All rights reserved.
             </p>
             <div className="flex items-center gap-2">
-              <span>Powered by</span>
+              <span>Check</span>
               <a 
                 href="https://quantsprogrammer.vercel.app" 
                 target='_blank' 

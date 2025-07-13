@@ -235,34 +235,66 @@ const AboutPage = () => {
           </div>
         </motion.section>
 
-        {/* Projects */}
+        {/* Recent Projects */}
         <motion.section className="bg-white/5 rounded-2xl p-6 border border-white/10" variants={itemVariants}>
           <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
             <FaCode className="text-blue-400" />
-            Personal Projects
+            Recent Projects
           </h3>
           <div className="space-y-4">
-            <div className="bg-white/5 rounded-lg p-4 border border-white/10">
+            {/* Recent Projects - Only requested cards in order */}
+            <div className="bg-white/5 rounded-lg p-4 border border-blue-400/30">
               <h4 className="font-semibold text-white mb-2">Quants Programmer: EdTech Platform</h4>
               <p className="text-blue-400 text-xs mb-2">Next.js, TypeScript, Express, MongoDB</p>
               <p className="text-gray-300 text-sm mb-3">
-                Built a full-stack EdTech platform with roadmaps, blogs, AI interviews, and auth via email verification. 
-                Integrated Gemini for mock interviews with leaderboard, feedback, STT/TTS.
+                Built a full-stack EdTech platform with roadmaps, blogs, AI interviews, and auth via email verification. Integrated Gemini for mock interviews with leaderboard, feedback, STT/TTS.
               </p>
               <div className="flex gap-2 text-xs">
                 <a href="https://quantsprogrammer.vercel.app" className="text-blue-400 hover:underline">Live Project</a>
                 <a href="https://github.com/Ayush5071/quantsprogrammer" className="text-blue-400 hover:underline">GitHub</a>
+                <a href="https://www.linkedin.com/posts/ayush-tiwari-84a823281_take-5-minutes-and-check-this-out-might-activity-7346314520933343232-FSWh?utm_source=share&utm_medium=member_desktop&rcm=ACoAAESkqvoBH6PYTNow6d35qEuxga6jIDGFx6" className="text-blue-400 hover:underline">LinkedIn Video</a>
               </div>
             </div>
-            <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-              <h4 className="font-semibold text-white mb-2">CampusX: College OLX Platform</h4>
-              <p className="text-blue-400 text-xs mb-2">Next.js, Express, Socket.io, Razorpay</p>
+            <div className="bg-white/5 rounded-lg p-4 border border-blue-400/30">
+              <h4 className="font-semibold text-white mb-2">Paissa: Progressive Financial Management Platform</h4>
+              <p className="text-blue-400 text-xs mb-2">Next.js 14, TypeScript, MongoDB, Tailwind CSS, Framer Motion, Chart.js, Google Gemini API</p>
               <p className="text-gray-300 text-sm mb-3">
-                Developed a marketplace for students with real-time auctions and chat. Features include categorized stores, 
-                Lost & Found section, and live auctions with complete user profiles.
+                Paissa is a modern, AI-powered financial platform that grows with your financial literacy. Features include transaction management, analytics, and AI-powered budget recommendations. Responsive, secure, and built for real-time insights.
               </p>
               <div className="flex gap-2 text-xs">
-                <a href="https://github.com/Ayush5071/Web_Stark" className="text-blue-400 hover:underline">GitHub</a>
+                <a href="https://paissa-9eml.vercel.app/" className="text-blue-400 hover:underline">Live Demo</a>
+                <a href="https://github.com/Ayush5071/paissa" className="text-blue-400 hover:underline">GitHub</a>
+              </div>
+            </div>
+            <div className="bg-white/5 rounded-lg p-4 border border-green-400/30">
+              <h4 className="font-semibold text-white mb-2">Green Club MNNIT - Official Website</h4>
+              <p className="text-green-400 text-xs mb-2">Next.js, React, Tailwind CSS, MongoDB, Framer Motion, Nodemailer, JWT Auth, Vercel</p>
+              <p className="text-gray-300 text-sm mb-3">
+                A vibrant, student-driven initiative dedicated to sustainability, nature, and environmental action at MNNIT Allahabad. Features eco-friendly UI, team page, gallery, problem management, admin dashboard, and secure contact form.
+              </p>
+              <div className="flex gap-2 text-xs">
+                <a href="https://green-club-mnnit.vercel.app/" className="text-green-400 hover:underline">Live Site</a>
+                <a href="https://github.com/Ayush5071/GreenClubMNNIT" className="text-green-400 hover:underline">GitHub</a>
+              </div>
+            </div>
+            <div className="bg-white/5 rounded-lg p-4 border border-blue-400/30">
+              <h4 className="font-semibold text-white mb-2">CareConnect AI: AI-Driven Remote Rehabilitation & Health Support</h4>
+              <p className="text-blue-400 text-xs mb-2">Next.js, BlazePose, Web Speech API, TailwindCSS, Node.js, Express, MongoDB, ESP32, MPU6050, Socket.IO, Gemini AI</p>
+              <p className="text-gray-300 text-sm mb-3">
+                Intelligent, hybrid healthcare platform for post-treatment support. Features AI-powered physiotherapy, real-time monitoring, voice-enabled symptom analysis, smart doctor recommendations, hardware integration, and automated report generation. Built for home and clinical use.
+              </p>
+              <div className="flex gap-2 text-xs">
+                <a href="https://www.youtube.com/embed/careconnectai-demo" className="text-blue-400 hover:underline">Demo Video</a>
+              </div>
+            </div>
+            <div className="bg-white/5 rounded-lg p-4 border border-blue-400/30">
+              <h4 className="font-semibold text-white mb-2">Legal AI Contract Intelligence Platform</h4>
+              <p className="text-blue-400 text-xs mb-2">Next.js, React, Tailwind CSS, Node.js, Express, MongoDB, Passport.js, Google Gemini, LangChain, DuckDuckGo, Tesseract, PyMuPDF</p>
+              <p className="text-gray-300 text-sm mb-3">
+                Developed for the Cyfuture AI Hackathon. AI-powered platform for legal document analysis, red flag detection, semantic chat, benchmarking, and PDF export. Integrates Gemini, LangChain, DuckDuckGo, and OCR for end-to-end legal intelligence.
+              </p>
+              <div className="flex gap-2 text-xs">
+                <a href="https://github.com/Ayush5071/Legal_AI" className="text-blue-400 hover:underline">GitHub</a>
               </div>
             </div>
           </div>

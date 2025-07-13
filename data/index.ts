@@ -73,15 +73,80 @@ export const projects = [
   {
     id: 1,
     title: "Quants Programmer",
-    des: "A comprehensive platform offering detailed and structured roadmaps to help users master various technologies efficiently.",
+    des: "A full-stack learning platform providing structured roadmaps, interactive resources, and community support for mastering modern technologies.",
     img: "/quantsprogrammer.jpg",
-    hosted: "https://liveproject.com",
+    hosted: "https://quantsprogrammer.vercel.app",
     skills: ["Next.js", "TypeScript", "MongoDB", "Node.js", "Express", "GSAP", "Tailwind CSS"],
-    link: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_quantsprogrammer-turning-dreams-into-digital-activity-7279265377153335296-nMto?utm_source=share&utm_medium=member_desktop&rcm=ACoAAESkqvoBH6PYTNow6d35qEuxga6jIDGFx64",
+    link: "https://github.com/Ayush5071/QuantsProgrammer",
     live: "https://quantsprogrammer.vercel.app",
+    linkedin: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_quantsprogrammer-turning-dreams-into-digital-activity-7279265377153335296-nMto?utm_source=share&utm_medium=member_desktop&rcm=ACoAAESkqvoBH6PYTNow6d35qEuxga6jIDGFx64",
+    video: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_quantsprogrammer-turning-dreams-into-digital-activity-7279265377153335296-nMto?utm_source=share&utm_medium=member_desktop"
   },
   {
     id: 2,
+    title: "Paissa",
+    des: "A fintech platform for seamless peer-to-peer payments, expense tracking, and financial analytics.",
+    img: "/paissa.svg",
+    hosted: "https://paissa.vercel.app",
+    skills: ["Next.js", "TypeScript", "MongoDB", "Node.js", "Tailwind CSS"],
+    link: "https://github.com/Ayush5071/Paissa",
+    live: "https://paissa.vercel.app",
+    linkedin: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_paissa-fintech-app-activity-7280000000000000000-xxxx?utm_source=share&utm_medium=member_desktop",
+    video: "https://www.youtube.com/embed/paissa-demo"
+  },
+  {
+    id: 3,
+    title: "Green Club MNNIT",
+    des: "Official website for Green Club MNNIT, featuring interactive animations and club activities.",
+    img: "/greenclub.svg",
+    hosted: "https://green-club-mnnit.vercel.app",
+    skills: ["GSAP", "Framer Motion", "Next.js", "TypeScript"],
+    link: "https://github.com/Ayush5071/GreenClubMNNIT",
+    live: "https://green-club-mnnit.vercel.app",
+    linkedin: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_greenclubmnnit-website-activity-7280000000000000001-yyyy?utm_source=share&utm_medium=member_desktop",
+    video: "https://www.youtube.com/embed/greenclub-demo"
+  },
+  {
+    id: 4,
+    title: "CareConnect AI",
+    des: "A healthcare platform using AI for patient management, appointment scheduling, and health analytics.",
+    img: "/careconnectai.svg",
+    hosted: "https://careconnectai.vercel.app",
+    skills: ["Next.js", "TypeScript", "MongoDB", "Node.js", "AI", "Tailwind CSS"],
+    link: "https://github.com/Ayush5071/CareConnectAI",
+    live: "https://careconnectai.vercel.app",
+    linkedin: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_careconnectai-healthcare-activity-7280000000000000003-wwww?utm_source=share&utm_medium=member_desktop",
+    video: "https://www.youtube.com/embed/careconnectai-demo"
+  },
+  {
+    id: 5,
+    title: "Legal AI",
+    des: "An AI-powered platform for legal document analysis and case prediction, leveraging NLP and machine learning.",
+    img: "/legalai.svg",
+    hosted: "https://legalai.vercel.app",
+    skills: ["Next.js", "TypeScript", "Python", "NLP", "Tailwind CSS"],
+    link: "https://github.com/Ayush5071/LegalAI",
+    live: "https://legalai.vercel.app",
+    linkedin: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_legalai-platform-activity-7280000000000000002-zzzz?utm_source=share&utm_medium=member_desktop",
+    video: "https://www.youtube.com/embed/legalai-demo"
+  },
+  {
+    id: 5.5,
+    title: "Hack36 College Hackathon Website",
+    des: `Built the official Hack36 college hackathon website with Next.js, TypeScript, GSAP, and Three.js. Collaborated with seniors and mentors, learned teamwork, and handled tight deadlines. Special thanks to designer Prakhar for creative inputs.\n\n<small>Certificate available below.</small>`,
+    img: "/hack36.svg",
+    hosted: "https://hack36.in",
+    skills: ["Next.js", "TypeScript", "Tailwind CSS", "GSAP", "Three.js"],
+    live: "https://hack36.in",
+    linkedin: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_hack36-college-hackathon-website-activity-7280000000000000004-xxxx?utm_source=share&utm_medium=member_desktop",
+    video: "",
+    certificate: {
+      url: "https://drive.google.com/file/d/1ygijYd9x2Tns8enzsDQSmYjM0po3qlNY/view?usp=sharing",
+      label: "View Certificate"
+    }
+  },
+  {
+    id: 6,
     title: "CampusX: College OlX",
     des: "An application designed for creating ads, facilitating live auctions, and enabling real-time chat to assist college users.",
     img: "/campusx.jpg",
@@ -91,7 +156,17 @@ export const projects = [
     live: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_campus-x-the-winning-project-of-innodev-activity-7263876541317603328-2cGr?utm_source=share&utm_medium=member_desktop&rcm=ACoAAESkqvoBH6PYTNow6d35qEuxga6jIDGFx64"
   },
   {
-    id: 3,
+    id: 7,
+    title: "Real Time Chat App",
+    des: "Developed a Real time chat app using Socket.io ",
+    hosted:"",
+    img: "/p4.jpg",
+    skills: ["Express", "Node.js", "MongoDB", "JavaScript", "Socket.io"],
+    live: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_webdevelopment-realtimechat-socketio-activity-7236120270309105664-dxlu?utm_source=share&utm_medium=member_desktop",
+    link: "https://github.com/Ayush5071/chatApp",
+  },
+  {
+    id: 8,
     title: "KISAAN - Farm Management System",
     des: "A farm management system using Express, Node.js, and MongoDB, integrated with an NLP chatbot using the bag-of-words model.",
     img: "/kisaan.jpg",
@@ -101,7 +176,7 @@ export const projects = [
     live: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_empowering-kisaans-with-next-gen-agritech-activity-7189592418441216000-oWNh?utm_source=share&utm_medium=member_desktop"
   },
   {
-    id: 4,
+    id: 9,
     title: "E-commerce Website",
     des: "A fully featured e-commerce website with a user-friendly interface and secure payment integration.",
     img: "/p4.svg",
@@ -111,39 +186,26 @@ export const projects = [
     live: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_hogwarts-haul-where-fantasy-meets-reality-activity-7177179704649555968-AMnW?utm_source=share&utm_medium=member_desktop"
   },
   {
-    id: 5,
-    title: "Landing Pages for Various Websites",
-    des: "Developed 3-4 visually appealing landing pages for different websites, showcasing modern design and responsive layouts.",
-    img: "/p3.svg",
-    hosted:"",
-    skills: ["HTML", "CSS", "JavaScript", "React"],
-    link: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_webdevelopment-mnnit-ece-activity-7147646116480626688-OB98?utm_source=share&utm_medium=member_desktop",
-    live: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_webdevelopment-mnnit-ece-activity-7147646116480626688-OB98?utm_source=share&utm_medium=member_desktop",
-  },
-  {
-    id: 6,
-    title: "Real Time Chat App",
-    des: "Developed a Real time chat app using Socket.io ",
-    hosted:"",
-    img: "/p4.jpg",
-    skills: ["Express", "Node.js", "MongoDB", "JavaScript"],
-    live: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_webdevelopment-realtimechat-socketio-activity-7236120270309105664-dxlu?utm_source=share&utm_medium=member_desktop",
-    link: "https://github.com/Ayush5071/chatApp",
-  },
-  {
-    id: 7,
+    id: 10,
     title: "Video Transcoding App",
     des: "Developed a video transcoding app using FFmpeg that uploads a video and breaks it into chunks.",
     img: "/p5.png",
     hosted: "",
-    skills: ["Express", "Node.js", "MongoDB", "JavaScript"],
-    link: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_excited-to-unveil-my-latest-creation-activity-7253086498621644800-UayK?utm_source=share&utm_medium=member_desktop&rcm=ACoAAESkqvoBH6PYTNow6d35qEuxga6jIDGFx64",
-    live: "https://github.com/Ayush5071/Video-Transcoding-ffmpeg",
+    skills: ["Express", "Node.js", "MongoDB", "JavaScript", "FFmpeg", "Sockets"],
+    link: "https://github.com/Ayush5071/Video-Transcoding-ffmpeg",
+    live: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_excited-to-unveil-my-latest-creation-activity-7253086498621644800-UayK?utm_source=share&utm_medium=member_desktop&rcm=ACoAAESkqvoBH6PYTNow6d35qEuxga6jIDGFx64",
   },
 ];
 
 
 export const workExperience = [
+  {
+      id: 7,
+      title: "9th Rank in Hack36-8.0",
+      desc: "Secured 9th rank among 100+ teams from different colleges for creating CareConnect AI. Certificate available.",
+      className: "md:col-span-2",
+      link: "https://drive.google.com/file/d/1bFqxIk8VTeUN2YuGCsqoWL9pjgYBdDJE/view?usp=sharing"
+  },
   {
       id: 1,
       title: "Winner of Innodev 2k25",
@@ -163,7 +225,7 @@ export const workExperience = [
       title: "Winner of Dev or Die 2k24",
       desc: "Won the annual technical event for full-stack web development at NIT Allahabad.",
       className: "md:col-span-2",
-      link: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_thrilled-to-share-my-achievements-in-avishkar-activity-7264005934639644672-6nEq",
+      link: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_thrilled-to-share_my-achievements-in-avishkar-activity-7264005934639644672-6nEq",
   },
   {
       id: 4,
@@ -187,7 +249,6 @@ export const workExperience = [
       link: "https://www.linkedin.com/posts/ayush-tiwari-84a823281_thrilled-to-share-my-achievements-in-avishkar-activity-7264005934639644672-6nEq",
   },
 ];
-
 
 export const Experiences = [
   {
@@ -273,6 +334,12 @@ export const extracurricularActivities = [
   {
     title: "Hackathons & Competitions",
     activities: [
+      {
+        name: "Hack36 2025",
+        role: "8th Rank",
+        duration: "2025",
+        description: "Secured 8th rank among 100+ teams from different colleges for creating CareConnect AI, a healthcare platform using AI for patient management and analytics. Certificate: https://drive.google.com/file/d/1bFqxIk8VTeUN2YuGCsqoWL9pjgYBdDJE/view?usp=sharing"
+      },
       {
         name: "HackNITP 3.0",
         role: "Winner",
