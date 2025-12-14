@@ -20,9 +20,11 @@ export const AchievementCard: React.FC<AchievementCardProps> = ({
   return (
     <div
       className={cn(
-        "group relative h-[200px] w-full overflow-hidden rounded-xl border border-purple-500/20 bg-gradient-to-br from-purple-900/20 via-blue-900/10 to-black backdrop-blur-xl transition-all duration-300 hover:border-purple-500/40 hover:shadow-[0_0_20px_rgba(168,85,247,0.2)] p-4",
+        "cursor-target group relative h-[200px] w-full overflow-hidden rounded-xl border border-purple-500/20 bg-gradient-to-br from-purple-900/20 via-blue-900/10 to-black backdrop-blur-xl transition-all duration-300 hover:border-purple-500/40 hover:shadow-[0_0_20px_rgba(168,85,247,0.2)] p-4 focus:outline-none focus:ring-2 focus:ring-purple-400/60",
         className
       )}
+      tabIndex={0}
+      aria-label={`View achievement ${title}`}
     >
       {/* Medal Icon */}
       <div className="absolute top-3 right-3 text-purple-500/60 group-hover:text-purple-400 transition-colors">

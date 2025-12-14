@@ -31,10 +31,12 @@ export const FuturisticProjectCard: React.FC<FuturisticProjectCardProps> = ({
   return (
     <div
       className={cn(
-        "group relative h-[250px] w-full overflow-hidden rounded-xl border border-purple-500/20 bg-gradient-to-br from-purple-900/20 via-blue-900/10 to-black backdrop-blur-xl transition-all duration-300 hover:border-purple-500/40 hover:shadow-[0_0_20px_rgba(168,85,247,0.2)]",
+        "cursor-target group relative h-[250px] w-full overflow-hidden rounded-xl border border-purple-500/20 bg-gradient-to-br from-purple-900/20 via-blue-900/10 to-black backdrop-blur-xl transition-all duration-300 hover:border-purple-500/40 hover:shadow-[0_0_20px_rgba(168,85,247,0.2)] focus:outline-none focus:ring-2 focus:ring-purple-400/60",
         className
       )}
+      tabIndex={0}
       onClick={() => router.push(`/project/${id}`)}
+      aria-label={`Open project ${title}`}
     >
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-900/30 via-blue-900/20 to-black" />

@@ -27,22 +27,30 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
+interface RootLayoutProps {
   children: React.ReactNode;
-}>) {
+}
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body className={inter.className}>          
+      <body className={inter.className}>
         <ThemeProvider
-            attribute="class"
-            defaultTheme="dark"
-            enableSystem
-            disableTransitionOnChange
-          >
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <>{/* Global custom cursor for all pages */}
             {children}
-          </ThemeProvider></body>
+            {/* Add global cursor at the end of body */}
+            {/* If you want to conditionally render GlobalCursor on client side, use dynamic import from 'next/dynamic' */}
+            {/* Example: */}
+            {/* const GlobalCursor = dynamic(() => import('./GlobalCursor'), { ssr: false }); */}
+            {/* <GlobalCursor /> */}
+          </>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

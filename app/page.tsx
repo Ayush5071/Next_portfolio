@@ -14,6 +14,7 @@ import MagneticButton from "@/components/ui/MagneticButton";
 import PageTransition from "@/components/ui/PageTransition";
 import { motion } from "framer-motion";
 import Extracurricular from '@/components/Extracurricular'
+import PersonalProjects from "@/components/PersonalProjects";
 
 export default function Home() {
   return (
@@ -105,12 +106,14 @@ export default function Home() {
           <Hero/>
         </div>
         <div className="w-full">
-          <Grid/>
-          <RecentProjects/>
+          {/* <Grid/> */}
+            <PersonalProjects />
+            {/* <RecentProjects/> */}
           <Experience/>
           <Achievement/>
           <Extracurricular />
         </div>
+
       </div>
       <Footer/>
     </main>

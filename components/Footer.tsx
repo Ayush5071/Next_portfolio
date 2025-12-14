@@ -32,7 +32,8 @@ const Footer = () => {
     { href: "https://github.com/Ayush5071", icon: FaGithub, color: "hover:text-gray-300", bg: "hover:bg-gray-500/20" },
     { href: "https://www.linkedin.com/in/ayush-tiwari-84a823281/", icon: FaLinkedin, color: "hover:text-blue-400", bg: "hover:bg-blue-500/20" },
     { href: "https://www.instagram.com/ayushtiwari5071", icon: FaInstagram, color: "hover:text-pink-400", bg: "hover:bg-pink-500/20" },
-    { href: "https://quantsprogrammer.vercel.app", icon: FaGlobe, color: "hover:text-green-400", bg: "hover:bg-green-500/20" },
+    { href: "https://prepsutra.tech", icon: FaGlobe, color: "hover:text-green-400", bg: "hover:bg-green-500/20" },
+    { href: "https://prepsutra.tech/navrion", icon: FaGlobe, color: "hover:text-pink-800", bg: "hover:bg-green-500/20" },
     { href: "https://www.youtube.com/@AYUSHTIWARINITA", icon: FaYoutube, color: "hover:text-red-400", bg: "hover:bg-red-500/20" },
   ]
 
@@ -150,7 +151,7 @@ const Footer = () => {
                 <FaGithub className="text-xl group-hover:animate-bounce" />
               </motion.a>
               <motion.a
-                href="https://quantsprogrammer.vercel.app"
+                href="https://prepsutra.tech"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-gradient-to-r from-emerald-600 to-emerald-700 rounded-full text-white hover:from-emerald-500 hover:to-emerald-600 transition-all duration-300 group"
@@ -277,19 +278,25 @@ const Footer = () => {
             <p className="text-center md:text-left">
               © 2025 Ayush Tiwari. All rights reserved.
             </p>
-            <div className="flex items-center gap-2">
-              <span>Check</span>
-              <a 
-                href="https://quantsprogrammer.vercel.app" 
-                target='_blank' 
-                rel="noopener noreferrer"
-                className='text-blue-400 hover:text-blue-300 transition-colors duration-300 font-medium'
-              >
-                QuantsProgrammer
-              </a>
-            </div>
           </motion.div>
         </motion.div>
+
+        {/* Call-to-action and agency section */}
+        <div className="w-full mt-8">
+          <div className="w-full bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 py-6 flex flex-col items-center justify-center gap-2">
+            <span className="text-white font-semibold text-lg md:text-xl">Let&apos;s build something amazing.</span>
+            <span className="text-white text-base">Check my agency&nbsp;
+              <a
+                href="https://prepsutra.tech/navrion"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-300 hover:text-blue-200 font-bold underline underline-offset-4 transition-colors duration-300"
+              >
+                Navrion
+              </a>
+            </span>
+          </div>
+        </div>
       </div>
     </footer>
   )

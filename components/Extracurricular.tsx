@@ -209,6 +209,74 @@ const Extracurricular = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {extracurricularActivities.map((category, categoryIndex) => {
+            // Special handling for Hackathons & Events (themed list)
+            if (category.title.toLowerCase().includes("hack" ) || category.title.toLowerCase().includes("event")) {
+              return (
+                <div key={categoryIndex} className="col-span-1 lg:col-span-3 mb-12">
+                  <motion.div
+                    className="max-w-4xl mx-auto px-6 py-6 rounded-2xl bg-gradient-to-br from-white/3 to-transparent border border-white/8 backdrop-blur-lg"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
+                  >
+                    <div className="flex items-center justify-between mb-4">
+                      <h3 className="text-2xl font-bold mb-0 bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent">
+                        {category.title}
+                      </h3>
+                      <div className="text-sm text-gray-400">{category.activities.length} entries</div>
+                    </div>
+
+                    <ul className="space-y-3">
+                      {category.activities.map((activity, idx) => (
+                        <li
+                          key={idx}
+                          className="group flex items-start gap-4">
+                          <div className="mt-1 flex-none">
+                            <div className="w-9 h-9 rounded-full bg-white/6 flex items-center justify-center text-blue-300 border border-white/6">
+                              <FaCalendarAlt className="text-sm" />
+                            </div>
+                          </div>
+                              <div className="flex-1">
+                                <div className="flex items-center justify-between gap-4">
+                                  <div>
+                                    <div className="text-base font-semibold text-white">{activity.name}</div>
+                                    <div className="text-sm text-gray-400">{activity.role} • {activity.duration}</div>
+                                  </div>
+                                  <div className="text-sm text-emerald-300 font-medium hidden sm:block">{activity.metrics ?? ''}</div>
+                                </div>
+                                <p className="mt-2 text-sm text-gray-300">{activity.description}</p>
+                              </div>
+                              <div className="ml-4 flex-none flex items-center">
+                                {((activity as any).url) ? (
+                                  <a
+                                    href={(activity as any).url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 text-white shadow-md hover:scale-105 transition-transform"
+                                    aria-label={`Open ${activity.name}`}
+                                    title={`Open ${activity.name}`}
+                                  >
+                                    <FaArrowRight className="text-sm" />
+                                  </a>
+                                ) : (
+                                  <span
+                                    className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-white/4 text-gray-400 cursor-not-allowed"
+                                    title="No link available"
+                                    aria-hidden
+                                  >
+                                    <FaArrowRight className="text-sm" />
+                                  </span>
+                                )}
+                              </div>
+                            </li>
+                      ))}
+                    </ul>
+                  </motion.div>
+                </div>
+              )
+            }
+            
             const colorScheme = getColorScheme(categoryIndex)
             const IconComponent = getIcon(category.title)
             
@@ -289,7 +357,21 @@ const Extracurricular = () => {
                                   </div>
                                 </div>
                               </div>
-                              <FaArrowRight className={`text-sm ${colorScheme.icon} opacity-0 group-hover/activity:opacity-100 transform translate-x-2 group-hover/activity:translate-x-0 transition-all duration-300`} />
+                              {((activity as any).url) ? (
+                                <a
+                                  href={(activity as any).url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className={`inline-flex items-center justify-center p-2 rounded-full ${colorScheme.icon} bg-white/5 hover:bg-white/10 transform translate-x-2 group-hover/activity:translate-x-0 opacity-0 group-hover/activity:opacity-100 transition-all duration-300`}
+                                  title={`Open ${activity.name}`}
+                                >
+                                  <FaArrowRight className="text-sm" />
+                                </a>
+                              ) : (
+                                <span className={`inline-flex items-center justify-center p-2 rounded-full text-gray-500 bg-white/3 opacity-0 group-hover/activity:opacity-100 transform translate-x-2 group-hover/activity:translate-x-0 transition-all duration-300`} title="No link available" aria-hidden>
+                                  <FaArrowRight className="text-sm" />
+                                </span>
+                              )}
                             </div>
 
                             {/* Metrics & Highlight */}
@@ -332,4 +414,4 @@ const Extracurricular = () => {
   )
 }
 
-export default Extracurricular 
+export default Extracurricular
