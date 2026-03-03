@@ -1,109 +1,118 @@
 // This file will handle fetching data for the Navrion live projects.
 
 export async function fetchLiveProjects() {
-  // Mock data for development/testing
   return [
     {
       name: "DealSafe",
       desc: "The Legal Sentinel for India — AI contract analysis powered by 20+ Indian legal frameworks.",
       live: true,
-      link: "https://www.linkedin.com/posts/ayushtiwarimnnit_introducing-dealsafe-the-legal-sentinel-activity-7425867982611832833-_Fac",
+      link: "https://www.linkedin.com/posts/ayushtiwarimnnit_introducing-dealsafe-the-legal-sentinel-activity-7425867982611832833-_Fac?utm_source=share&utm_medium=member_desktop&rcm=ACoAAESkqvoBH6PYTNow6d35qEuxga6jIDGFx64",
       cover: "/projects/legal.png",
       technologies: ["Electron.js", "LangGraph", "Qwen 1.5B", "Python"]
     },
     {
       name: "PrepSutra",
-      desc: "A platform offering curated study materials and practice tests for coding interviews (Premium).",
+      desc: "Platform helping college freshers learn tech stacks and coding. 800+ users. Solo product.",
       live: true,
       link: "https://prepsutra.tech",
-      cover: "/navrion/prepsutra.png",
-      technologies: ["Next.js", "React", "TailwindCSS", "Mongodb", "langchain", "genAI", "OCR", "NEXT_API", "Express", "OAUTH"]
+      cover: "/projects/prepsutra.png",
+      technologies: ["Next.js", "React", "TailwindCSS", "MongoDB", "LangChain", "GenAI"]
+    },
+    {
+      name: "Mentix",
+      desc: "Courses & test series platform for JEE students with 500+ active users.",
+      live: true,
+      link: "https://mentix.in",
+      cover: "/projects/prepsutra.png",
+      technologies: ["Next.js", "React", "TailwindCSS", "MongoDB"]
+    },
+    {
+      name: "TestSaarthi",
+      desc: "AI-powered test preparation platform with adaptive learning and performance analytics.",
+      live: true,
+      link: "https://testsaarthi.vercel.app",
+      cover: "/projects/prepsutra.png",
+      technologies: ["Next.js", "React", "MongoDB", "GenAI"]
+    },
+    {
+      name: "Cipher",
+      desc: "Payroll management system built during internship at Computer Software Solutions, Kolkata.",
+      live: false,
+      link: "#",
+      cover: "/projects/prepsutra.png",
+      technologies: ["Next.js", "Express", "MongoDB", "Tailwind CSS"]
     },
     {
       name: "HACK36",
-      desc: "Hackthon website funded by ISEA, GITHUB Education, and other sponsors in MNNIT with 1000+ registrations.",
+      desc: "Hackathon website funded by ISEA, GitHub Education with 1000+ registrations.",
       live: true,
       link: "https://hack36-9-0.vercel.app/",
-      cover: "/navrion/hack25.png",
-      technologies: ["Next.js", "TypeScript", "Tailwind css"]
+      cover: "/projects/hack25.png",
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS"]
     },
     {
       name: "Green Club",
-      desc: "A platform promoting environmental awareness and sustainability initiatives on campus.",
+      desc: "Platform promoting environmental awareness and sustainability on campus.",
       live: false,
       link: "https://enactus-mnnit-allahabad.vercel.app/",
-      cover: "/navrion/green.png",
+      cover: "/projects/green.png",
       technologies: ["React", "TailwindCSS", "Supabase", "Postgres"]
     },
     {
       name: "Enactus",
-      desc: "Platform that helps social entrepreneurs to create sustainable business solutions for community development.",
+      desc: "Platform helping social entrepreneurs create sustainable business solutions.",
       live: true,
       link: "https://enactus-mnnit-allahabad.vercel.app/about",
-      cover: "/navrion/enactus.png",
+      cover: "/projects/enactus.png",
       technologies: ["React.js", "JavaScript", "TailwindCSS", "Express"]
     },
     {
       name: "SAE",
-      desc: "Platform for the Society of Automotive Engineers (SAE) chapter at MNNIT, showcasing projects and events.",
+      desc: "Society of Automotive Engineers chapter at MNNIT, showcasing projects and events.",
       live: true,
       link: "https://sae-mnnit.vercel.app/",
-      cover: "/navrion/sae.png",
-      technologies: ["Nextjs", "Bootstrap", "TailwindCss"]
+      cover: "/projects/sae.png",
+      technologies: ["Next.js", "Bootstrap", "TailwindCSS"]
     },
     {
       name: "E-Cell",
-      desc: "Entrepreneurship Cell website of MNNIT to foster entrepreneurial spirit among students.",
+      desc: "Entrepreneurship Cell website of MNNIT fostering entrepreneurial spirit.",
       live: true,
       link: "https://ecell-mnnit.vercel.app/",
-      cover: "/navrion/ecell.png",
+      cover: "/projects/ecell.png",
       technologies: ["Next.js", "React", "TailwindCSS"]
     },
     {
       name: "Hack36 2024",
-      desc: "Hackthon website funded by GDSC, GITHUB Education, and other sponsors in MNNIT with 1000+ registrations.",
+      desc: "Hackathon website funded by GDSC, GitHub Education with 1000+ registrations.",
       live: true,
       link: "https://hack36-8-0-ten.vercel.app/",
-      cover: "/navrion/hack24.png",
+      cover: "/projects/hack24.png",
       technologies: ["Next.js", "TypeScript", "GSAP", "Framer Motion"]
     },
     {
-      name: "Curav x Avishkar",
-      desc: "webiste with 1000+ regitrations of Annual Flagship Techno-Management Festival of MNNIT Allahabad with modern UI (must check).",
+      name: "Culrav x Avishkar",
+      desc: "Annual Flagship Techno-Management Festival of MNNIT with 1000+ registrations.",
       live: true,
       link: "https://culrav-avishkar-2k24.vercel.app/",
-      cover: "/navrion/culrav.png",
-      technologies: ["Express", "Node", "Mongodb", "JWT", "React", "TailwindCSS", "Framer Motion"]
+      cover: "/projects/culrav.png",
+      technologies: ["Express", "Node", "MongoDB", "JWT", "React", "TailwindCSS"]
     },
     {
       name: "Paisaa",
       desc: "Platform for personal finance management and investment tracking.",
       live: true,
       link: "https://paissa-9eml.vercel.app/",
-      cover: "/navrion/paisaa.png",
-      technologies: ["Next", "Genai", "Redux", "TailwindCSS", "MongoDB"]
+      cover: "/projects/paisaa.png",
+      technologies: ["Next.js", "GenAI", "Redux", "TailwindCSS", "MongoDB"]
     },
     {
-      name: "International Confrence (SCES)",
-      desc: "For International Conference on Sustainable Computing and Engineering Systems organized by MNNIT.",
+      name: "SCES Conference",
+      desc: "International Conference on Sustainable Computing and Engineering Systems at MNNIT.",
       live: true,
       link: "https://confrence-ten.vercel.app/",
-      cover: "/navrion/sces.png",
-      technologies: ["html", "php", "javascript", "TailwindCSS"]
-    },
-    {
-      name: "DISPENSARY REPORT SYSTEM",
-      desc: "Helps to create and print dispensary reports for patients in a structured format.",
-      link: "https://mnnit-dispensary.vercel.app/",
-      cover: "/navrion/disp.png",
-      technologies: ["HTML", "Vanilla css", "TailwindCSS"]
-    },
-    {
-      name: "Patient and Disease Tracking System for Research",
-      desc: "get downlaod and store patient disease data for research and analysis.",
-      link: "https://patiententry.vercel.app/",
-      cover: "/navrion/entry.png",
-      technologies: ["NEXT", "TailwindCSS", "NEON", "Postgres"]
+      cover: "/projects/sces.png",
+      technologies: ["HTML", "PHP", "JavaScript", "TailwindCSS"]
     },
   ];
 }

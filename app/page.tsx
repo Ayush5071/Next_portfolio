@@ -7,6 +7,7 @@ import Navbar from "@/components/ui/Navbar";
 import PageTransition from "@/components/ui/PageTransition";
 import Extracurricular from '@/components/Extracurricular'
 import PersonalProjects from "@/components/PersonalProjects";
+import FreelanceProjects from "@/components/FreelanceProjects";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <div className="relative w-full">
           <Hero />
           <PersonalProjects />
+          <FreelanceProjects />
           <Experience />
           <Achievement />
           <Extracurricular />

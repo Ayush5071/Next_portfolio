@@ -24,31 +24,29 @@ export function Experience() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
+        <div className="max-w-3xl mx-auto space-y-8">
           {Experiences.map((exp, index) => (
             <motion.div
               key={exp.id}
-              className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E5E5E5] hover:shadow-lg hover:shadow-black/5 transition-all duration-400 flex flex-col items-start"
+              className="bg-white p-8 sm:p-10 rounded-2xl border border-[#E5E5E5] hover:shadow-lg hover:shadow-black/5 transition-all duration-400"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <div className="flex flex-col w-full mb-4">
-                <span className="text-[11px] font-sans tracking-widest uppercase text-[#999999] mb-2">{exp.role}</span>
-                <h3 className="font-serif text-2xl font-bold text-[#111111] mb-1">{exp.title}</h3>
-              </div>
+              <span className="text-[11px] font-sans tracking-widest uppercase text-[#999999] mb-3 block">{exp.role}</span>
+              <h3 className="font-serif text-3xl font-bold text-[#111111] mb-4">{exp.title}</h3>
 
-              <p className="text-[14px] text-[#666666] leading-relaxed mb-6 flex-1">
+              <p className="text-[15px] text-[#666666] leading-relaxed mb-6 font-sans">
                 {exp.detailedDesc || exp.desc}
               </p>
 
               {exp.skills && exp.skills.length > 0 && (
-                <div className="flex flex-wrap gap-2 mt-auto">
+                <div className="flex flex-wrap gap-2">
                   {exp.skills.map((skill) => (
                     <span
                       key={skill}
-                      className="px-2.5 py-1 text-[10px] font-medium bg-[#FAFAFA] text-[#888888] border border-[#EBEBEB] rounded-full"
+                      className="px-3 py-1.5 text-[11px] font-medium bg-[#FAFAFA] text-[#888888] border border-[#EBEBEB] rounded-full"
                     >
                       {skill}
                     </span>
