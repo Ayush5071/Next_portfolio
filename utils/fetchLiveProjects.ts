@@ -11,27 +11,11 @@ export async function fetchLiveProjects() {
       technologies: ["Electron.js", "LangGraph", "Qwen 1.5B", "Python"]
     },
     {
-      name: "PrepSutra",
-      desc: "Platform helping college freshers learn tech stacks and coding. 800+ users. Solo product.",
-      live: true,
-      link: "https://prepsutra.tech",
-      cover: "/projects/prepsutra.png",
-      technologies: ["Next.js", "React", "TailwindCSS", "MongoDB", "LangChain", "GenAI"]
-    },
-    {
-      name: "Mentix",
-      desc: "Courses & test series platform for JEE students with 500+ active users.",
-      live: true,
-      link: "https://mentix.in",
-      cover: "/projects/prepsutra.png",
-      technologies: ["Next.js", "React", "TailwindCSS", "MongoDB"]
-    },
-    {
       name: "TestSaarthi",
       desc: "AI-powered test preparation platform with adaptive learning and performance analytics.",
       live: true,
       link: "https://testsaarthi.vercel.app",
-      cover: "/projects/prepsutra.png",
+      cover: "/projects/testsaarthi.png",
       technologies: ["Next.js", "React", "MongoDB", "GenAI"]
     },
     {
@@ -39,7 +23,7 @@ export async function fetchLiveProjects() {
       desc: "Payroll management system built during internship at Computer Software Solutions, Kolkata.",
       live: false,
       link: "#",
-      cover: "/projects/prepsutra.png",
+      cover: "/projects/cipher.png",
       technologies: ["Next.js", "Express", "MongoDB", "Tailwind CSS"]
     },
     {

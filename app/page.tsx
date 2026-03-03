@@ -8,6 +8,7 @@ import PageTransition from "@/components/ui/PageTransition";
 import Extracurricular from '@/components/Extracurricular'
 import PersonalProjects from "@/components/PersonalProjects";
 import FreelanceProjects from "@/components/FreelanceProjects";
+import Startups from "@/components/Startups";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         {/* Main Content */}
         <div className="relative w-full">
           <Hero />
+          <Startups />
           <PersonalProjects />
           <FreelanceProjects />
           <Experience />

@@ -35,14 +35,14 @@ const Hero = () => {
               I build sophisticated, scalable web applications with a focus on seamless user experiences, modern backend architectures, and elegant problem-solving.
             </p>
 
-            {/* Tech Stack */}
+            {/* Domains / Roles */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-2.5 mb-12">
-              {['React', 'Next.js', 'Node.js', 'TypeScript', 'GenAI', 'SQL'].map((tech) => (
+              {['Web Development', 'App Development', 'Software Development', 'GenAI Engineer', 'Machine Learning'].map((domain) => (
                 <span
-                  key={tech}
+                  key={domain}
                   className="px-4 py-2 text-[13px] font-medium tracking-wide bg-[#FAFAFA] text-[#111111] border border-[#E5E5E5] rounded-full hover:border-[#111111] hover:bg-white transition-all duration-300"
                 >
-                  {tech}
+                  {domain}
                 </span>
               ))}
             </div>

@@ -2,20 +2,55 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 
 const freelanceProjects = [
     {
-        title: "DealSafe",
-        image: "/projects/legal.png",
-        tech: ["Electron.js", "LangGraph", "Qwen 1.5B"],
+        title: "Mentix",
+        image: "/projects/mentix.png",
+        tech: ["Next.js", "React", "MongoDB"],
         points: [
-            "Legal Sentinel for India — AI contract analysis app",
-            "Vector ingestion of 20+ Indian legal frameworks (ICA 1872, IPC)",
-            "Highlights risky clauses, extracts terms & generates summaries",
-            "Privacy-first — entire analysis runs locally on-device",
+            "Courses & test series platform for JEE students",
+            "500+ active users on the platform",
+            "Built entirely solo from scratch",
+            "Adaptive content delivery system",
         ],
-        link: "https://www.linkedin.com/posts/ayushtiwarimnnit_introducing-dealsafe-the-legal-sentinel-activity-7425867982611832833-_Fac?utm_source=share&utm_medium=member_desktop&rcm=ACoAAESkqvoBH6PYTNow6d35qEuxga6jIDGFx64",
+        link: "https://mentix.in",
+    },
+    {
+        title: "PrepSutra",
+        image: "/projects/prepsutra.png",
+        tech: ["Next.js", "MongoDB", "GenAI"],
+        points: [
+            "Platform for college freshers learning tech stacks",
+            "Guided roadmaps and mock interviews",
+            "800+ active users using the platform",
+            "End-to-end full stack execution",
+        ],
+        link: "https://prepsutra.tech",
+    },
+    {
+        title: "Cipher",
+        image: "/projects/cipher.png",
+        tech: ["React Native", "Electron.js", "Express"],
+        points: [
+            "Cross-platform desktop & mobile payroll app",
+            "Employee management & salary processing APIs",
+            "Attendance tracking & financial reports",
+            "Built at Computer Software Solutions, Kolkata",
+        ],
+        link: null,
+    },
+    {
+        title: "TestSaarthi",
+        image: "/projects/testsaarthi.png",
+        tech: ["Next.js", "MongoDB", "GenAI"],
+        points: [
+            "AI-powered test preparation platform",
+            "Adaptive learning with performance analytics",
+            "Custom test series for competitive exams",
+            "Real-time progress tracking dashboard",
+        ],
+        link: "https://testsaarthi.vercel.app",
     },
     {
         title: "DataExpert",
@@ -41,42 +76,6 @@ const freelanceProjects = [
         ],
         link: null,
     },
-    {
-        title: "TestSaarthi",
-        image: "/projects/prepsutra.png",
-        tech: ["Next.js", "MongoDB", "GenAI"],
-        points: [
-            "AI-powered test preparation platform",
-            "Adaptive learning with performance analytics",
-            "Custom test series for competitive exams",
-            "Real-time progress tracking dashboard",
-        ],
-        link: "https://testsaarthi.vercel.app",
-    },
-    {
-        title: "Cipher",
-        image: "/projects/prepsutra.png",
-        tech: ["Next.js", "Express", "MongoDB"],
-        points: [
-            "Payroll management system — built at CSS, Kolkata",
-            "Employee management & salary processing",
-            "Attendance tracking & financial reports",
-            "Full stack — Next.js frontend + Express APIs",
-        ],
-        link: null,
-    },
-    {
-        title: "Mentix",
-        image: "/projects/prepsutra.png",
-        tech: ["Next.js", "React", "MongoDB"],
-        points: [
-            "Courses & test series for JEE students",
-            "500+ active users on the platform",
-            "Built entirely solo from scratch",
-            "Adaptive content delivery system",
-        ],
-        link: "https://mentix.in",
-    },
 ];
 
 const FreelanceProjects = () => {
@@ -90,12 +89,12 @@ const FreelanceProjects = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    <p className="subtitle-sans mb-4">Freelance</p>
+                    <p className="subtitle-sans mb-4">Contract & Solo Work</p>
                     <h2 className="heading-serif text-4xl md:text-5xl lg:text-6xl mb-6">
-                        Freelance Projects
+                        Freelance & Products
                     </h2>
                     <p className="text-[#666666] max-w-xl mx-auto text-base font-sans leading-relaxed">
-                        A curated set of client and personal projects built end-to-end.
+                        A curated set of client deliveries and personal startup ventures.
                     </p>
                 </motion.div>
 
@@ -103,14 +102,14 @@ const FreelanceProjects = () => {
                     {freelanceProjects.map((project, index) => (
                         <motion.div
                             key={index}
-                            className="group bg-white rounded-2xl border border-[#E5E5E5] overflow-hidden hover:shadow-lg hover:shadow-black/5 hover:border-[#CCCCCC] transition-all duration-400"
+                            className="group bg-white rounded-2xl border border-[#E5E5E5] overflow-hidden hover:shadow-lg hover:shadow-black/5 hover:border-[#CCCCCC] transition-all duration-400 flex flex-col"
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.4, delay: index * 0.08 }}
                         >
                             {/* Image */}
-                            <div className="relative w-full h-[140px] overflow-hidden bg-[#F5F5F0]">
+                            <div className="relative w-full h-[160px] overflow-hidden bg-[#F5F5F0]">
                                 <Image
                                     src={project.image}
                                     alt={project.title}
@@ -121,30 +120,30 @@ const FreelanceProjects = () => {
                             </div>
 
                             {/* Content */}
-                            <div className="p-4">
-                                <div className="flex items-center justify-between mb-2">
-                                    <h3 className="font-serif text-lg font-bold text-[#111111]">{project.title}</h3>
+                            <div className="p-5 flex flex-col flex-1">
+                                <div className="flex items-center justify-between mb-3">
+                                    <h3 className="font-serif text-xl font-bold text-[#111111]">{project.title}</h3>
                                     {project.link && (
                                         <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-[10px] uppercase tracking-widest text-[#999999] hover:text-[#111111] transition-colors">
-                                            View →
+                                            Visit →
                                         </a>
                                     )}
                                 </div>
 
                                 {/* Tech pills */}
-                                <div className="flex flex-wrap gap-1 mb-3">
+                                <div className="flex flex-wrap gap-1.5 mb-4">
                                     {project.tech.map((t) => (
-                                        <span key={t} className="px-2 py-0.5 text-[9px] font-medium bg-[#FAFAFA] text-[#888888] border border-[#EBEBEB] rounded-full">
+                                        <span key={t} className="px-2 py-0.5 text-[10px] font-medium bg-[#FAFAFA] text-[#888888] border border-[#EBEBEB] rounded-full">
                                             {t}
                                         </span>
                                     ))}
                                 </div>
 
                                 {/* Points */}
-                                <ul className="space-y-1">
+                                <ul className="space-y-1.5 mt-auto">
                                     {project.points.map((point, i) => (
-                                        <li key={i} className="text-[12px] text-[#666666] leading-relaxed flex items-start gap-1.5">
-                                            <span className="text-[#CCCCCC] mt-0.5 text-[8px]">●</span>
+                                        <li key={i} className="text-[13px] text-[#666666] leading-snug flex items-start gap-2">
+                                            <span className="text-[#CCCCCC] mt-1 text-[6px]">●</span>
                                             {point}
                                         </li>
                                     ))}
