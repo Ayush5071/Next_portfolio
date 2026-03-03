@@ -97,7 +97,7 @@ const Extracurricular = () => {
               <div className="border-l border-[#E5E5E5] pl-6">
                 <p className="font-sans font-bold text-lg text-[#111111] mb-1">Community Building</p>
                 <p className="text-[#666666] text-[15px] leading-relaxed">
-                  Organized hackathons, managed the Computer Coding Club's introductory sessions, and collaborated with diverse teams to execute large-scale university events.
+                  Organized hackathons, managed the Computer Coding Club&apos;s introductory sessions, and collaborated with diverse teams to execute large-scale university events.
                 </p>
               </div>
             </div>
