@@ -1,61 +1,64 @@
 "use client";
 
 import React from "react";
-import TargetCursor from "./TargetCursor";
-import "./TargetCursor.css";
 import { Experiences } from "../data/index";
 import { motion } from "framer-motion";
-import Image from "next/image";
-import { useRouter } from "next/navigation";
-
-const taglines: Record<number|string, string> = {
-  1: "Fest website UI lead",
-  2: "Tech event frontend",
-  3: "Club site animations",
-  4: "Full stack learning app",
-  5: "Dashboard & backend",
-  6: "Payment & frontend",
-};
 
 export function Experience() {
-  const router = useRouter();
   return (
-    <>
-      <TargetCursor targetSelector=".cursor-target" spinDuration={2} hideDefaultCursor={true} parallaxOn={true} />
-      <section className="min-h-screen w-full py-20" id="experience">
-        <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-2 text-gray-100 tracking-tight bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent">
-              Experience
-            </h2>
-            <p className="text-gray-400 max-w-xl mx-auto text-base">A quick look at my roles & contributions</p>
-          </div>
-          <div className="flex flex-wrap gap-6 justify-center items-center">
-            {Experiences.map((exp) => (
-              <motion.button
-                key={exp.id}
-                className="cursor-target relative h-28 px-6 flex flex-col items-center justify-center rounded-2xl border border-blue-500/30 shadow-lg transition-all duration-300 bg-gradient-to-r from-blue-500/40 to-blue-700/40 text-white font-semibold text-lg tracking-tight overflow-hidden group focus:outline-none focus:ring-2 focus:ring-blue-500 backdrop-blur-md"
-                style={{ width: 'auto', minWidth: 'unset', maxWidth: 'unset' }}
-                whileHover={{ y: -2 }}
-                whileTap={{ y: 0 }}
-                tabIndex={0}
-                aria-label={`View details for ${exp.title}`}
-              >
-                <motion.div
-                  className="absolute inset-0 pointer-events-none"
-                  initial={{ y: "100%", opacity: 0 }}
-                  whileHover={{ y: "0%", opacity: 1 }}
-                  transition={{ duration: 0.5, ease: "easeInOut" }}
-                  style={{ background: "rgba(255,255,255,0.08)" }}
-                />
-                <span className="relative z-10 text-lg font-bold mb-1 text-white group-hover:text-blue-100 transition-colors duration-500 text-center px-2 whitespace-nowrap">{exp.title}</span>
-                <span className="relative z-10 text-xs group-hover:text-blue-100 transition-colors duration-500 text-center px-2">{exp.role}</span>
-                <span className="relative z-10 text-xs group-hover:text-blue-100 transition-colors duration-500 text-center px-2">{taglines[exp.id] || "Experience"}</span>
-              </motion.button>
-            ))}
-          </div>
+    <section className="w-full py-24 md:py-32 bg-[#FAFAFA]" id="experience">
+      <div className="max-w-[1200px] mx-auto px-6 sm:px-8 lg:px-12">
+        <motion.div
+          className="text-center mb-16 md:mb-20"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <p className="subtitle-sans mb-4">Journey</p>
+          <h2 className="heading-serif text-4xl md:text-5xl lg:text-6xl mb-6">
+            Experience
+          </h2>
+          <p className="text-[#666666] max-w-xl mx-auto text-base font-sans leading-relaxed">
+            Professional roles and notable ventures.
+          </p>
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
+          {Experiences.map((exp, index) => (
+            <motion.div
+              key={exp.id}
+              className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E5E5E5] hover:shadow-lg hover:shadow-black/5 transition-all duration-400 flex flex-col items-start"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              <div className="flex flex-col w-full mb-4">
+                <span className="text-[11px] font-sans tracking-widest uppercase text-[#999999] mb-2">{exp.role}</span>
+                <h3 className="font-serif text-2xl font-bold text-[#111111] mb-1">{exp.title}</h3>
+              </div>
+
+              <p className="text-[14px] text-[#666666] leading-relaxed mb-6 flex-1">
+                {exp.detailedDesc || exp.desc}
+              </p>
+
+              {exp.skills && exp.skills.length > 0 && (
+                <div className="flex flex-wrap gap-2 mt-auto">
+                  {exp.skills.map((skill) => (
+                    <span
+                      key={skill}
+                      className="px-2.5 py-1 text-[10px] font-medium bg-[#FAFAFA] text-[#888888] border border-[#EBEBEB] rounded-full"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </motion.div>
+          ))}
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }

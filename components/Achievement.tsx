@@ -2,45 +2,63 @@
 
 import { workExperience } from '@/data'
 import React from 'react'
-import { FaExternalLinkAlt } from 'react-icons/fa'
+import { ArrowRight } from 'lucide-react'
+import { motion } from 'framer-motion'
 
 const Achievement = () => {
   return (
-    <section id="achievements" className="min-h-screen w-full py-20">
-      <div className="max-w-3xl mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 mt-8 bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent text-center">
-          Hackathon & Events
-        </h2>
-        <p className="text-gray-400 max-w-2xl mb-10 mx-auto text-lg leading-relaxed text-center">
-          A showcase of my accomplishments, victories, and milestones in various tech competitions and events
-        </p>
-        <ul className="space-y-4">
-          {workExperience.map((achievement) => (
-            <li
+    <section id="achievements" className="w-full py-24 md:py-32 bg-white">
+      <div className="max-w-[800px] mx-auto px-6 sm:px-8">
+        <motion.div
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <p className="subtitle-sans mb-4">Milestones</p>
+          <h2 className="heading-serif text-4xl md:text-5xl lg:text-5xl mb-6">
+            Hackathons & Events
+          </h2>
+          <p className="text-[#666666] text-base leading-relaxed font-sans">
+            A showcase of my accomplishments, victories, and milestones in various tech competitions and events.
+          </p>
+        </motion.div>
+
+        <ul className="space-y-0">
+          {workExperience.map((achievement, index) => (
+            <motion.li
               key={achievement.id}
-              className="cursor-target py-3 px-4 rounded-lg bg-white/3 border border-white/6 flex items-start justify-between gap-4 focus:outline-none focus:ring-2 focus:ring-blue-400/60"
-              tabIndex={0}
-              aria-label={`Achievement: ${achievement.title}`}
+              className="group py-6 sm:py-8 border-b border-[#E5E5E5] last:border-b-0 flex flex-col sm:flex-row sm:items-baseline justify-between gap-4 sm:gap-8"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <div>
-                <div className="text-base font-semibold text-white">{achievement.title}</div>
-                <div className="text-sm text-gray-300">{achievement.desc}</div>
+              <div className="flex-1">
+                <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#111111] mb-2 group-hover:text-[#666666] transition-colors duration-300">
+                  {achievement.title}
+                </h3>
+                <p className="text-[14px] sm:text-[15px] font-sans text-[#666666] leading-relaxed">
+                  {achievement.desc}
+                </p>
               </div>
-              <div className="flex items-center gap-3">
-                {achievement.link && achievement.link !== "#" ? (
+
+              {achievement.link && achievement.link !== "#" && (
+                <div className="flex items-center mt-2 sm:mt-0">
                   <a
                     href={achievement.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 text-white shadow-md hover:scale-105 transition-transform"
+                    className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-[#E5E5E5] text-[#111111] hover:bg-[#111111] hover:text-white hover:border-[#111111] transition-all duration-300 group-hover:-translate-y-1"
                     aria-label={`Open ${achievement.title}`}
                     title={`Open ${achievement.title}`}
                   >
-                    <FaExternalLinkAlt className="text-sm" />
+                    <ArrowRight className="w-4 h-4 -rotate-45" />
                   </a>
-                ) : null}
-              </div>
-            </li>
+                </div>
+              )}
+            </motion.li>
           ))}
         </ul>
       </div>
@@ -48,4 +66,4 @@ const Achievement = () => {
   );
 }
 
-export default Achievement
+export default Achievement;

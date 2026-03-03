@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "./provider";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: '--font-inter',
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: '--font-playfair',
+});
 
 export const metadata: Metadata = {
   title: "Ayush's Portfolio",
@@ -27,29 +34,15 @@ export const metadata: Metadata = {
   },
 };
 
-interface RootLayoutProps {
+export default function RootLayout({
+  children,
+}: {
   children: React.ReactNode;
-}
-
-export default function RootLayout({ children }: RootLayoutProps) {
+}) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <>{/* Global custom cursor for all pages */}
-            {children}
-            {/* Add global cursor at the end of body */}
-            {/* If you want to conditionally render GlobalCursor on client side, use dynamic import from 'next/dynamic' */}
-            {/* Example: */}
-            {/* const GlobalCursor = dynamic(() => import('./GlobalCursor'), { ssr: false }); */}
-            {/* <GlobalCursor /> */}
-          </>
-        </ThemeProvider>
+      <body className={`${inter.variable} ${playfair.variable} font-sans bg-[#FAFAFA] text-[#111111] antialiased min-h-screen selection:bg-[#111111] selection:text-white`}>
+        {children}
       </body>
     </html>
   );

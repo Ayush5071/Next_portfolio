@@ -4,12 +4,20 @@ export async function fetchLiveProjects() {
   // Mock data for development/testing
   return [
     {
+      name: "DealSafe",
+      desc: "The Legal Sentinel for India — AI contract analysis powered by 20+ Indian legal frameworks.",
+      live: true,
+      link: "https://www.linkedin.com/posts/ayushtiwarimnnit_introducing-dealsafe-the-legal-sentinel-activity-7425867982611832833-_Fac",
+      cover: "/projects/legal.png",
+      technologies: ["Electron.js", "LangGraph", "Qwen 1.5B", "Python"]
+    },
+    {
       name: "PrepSutra",
       desc: "A platform offering curated study materials and practice tests for coding interviews (Premium).",
       live: true,
       link: "https://prepsutra.tech",
       cover: "/navrion/prepsutra.png",
-      technologies: ["Next.js", "React", "TailwindCSS", "Mongodb", "langchain", "genAI", "OCR", "NEXT_API","Express","OAUTH"]
+      technologies: ["Next.js", "React", "TailwindCSS", "Mongodb", "langchain", "genAI", "OCR", "NEXT_API", "Express", "OAUTH"]
     },
     {
       name: "HACK36",
@@ -25,7 +33,7 @@ export async function fetchLiveProjects() {
       live: false,
       link: "https://enactus-mnnit-allahabad.vercel.app/",
       cover: "/navrion/green.png",
-      technologies: ["React", "TailwindCSS","Supabase","Postgres"]
+      technologies: ["React", "TailwindCSS", "Supabase", "Postgres"]
     },
     {
       name: "Enactus",
@@ -33,7 +41,7 @@ export async function fetchLiveProjects() {
       live: true,
       link: "https://enactus-mnnit-allahabad.vercel.app/about",
       cover: "/navrion/enactus.png",
-      technologies: ["React.js", "JavaScript", "TailwindCSS","Express"]
+      technologies: ["React.js", "JavaScript", "TailwindCSS", "Express"]
     },
     {
       name: "SAE",
@@ -41,7 +49,7 @@ export async function fetchLiveProjects() {
       live: true,
       link: "https://sae-mnnit.vercel.app/",
       cover: "/navrion/sae.png",
-      technologies: ["Nextjs", "Bootstrap","TailwindCss"]
+      technologies: ["Nextjs", "Bootstrap", "TailwindCss"]
     },
     {
       name: "E-Cell",
@@ -57,7 +65,7 @@ export async function fetchLiveProjects() {
       live: true,
       link: "https://hack36-8-0-ten.vercel.app/",
       cover: "/navrion/hack24.png",
-      technologies: ["Next.js", "TypeScript", "GSAP","Framer Motion"]
+      technologies: ["Next.js", "TypeScript", "GSAP", "Framer Motion"]
     },
     {
       name: "Curav x Avishkar",
@@ -65,7 +73,7 @@ export async function fetchLiveProjects() {
       live: true,
       link: "https://culrav-avishkar-2k24.vercel.app/",
       cover: "/navrion/culrav.png",
-      technologies: ["Express","Node","Mongodb","JWT", "React", "TailwindCSS","Framer Motion"]
+      technologies: ["Express", "Node", "Mongodb", "JWT", "React", "TailwindCSS", "Framer Motion"]
     },
     {
       name: "Paisaa",
@@ -73,7 +81,7 @@ export async function fetchLiveProjects() {
       live: true,
       link: "https://paissa-9eml.vercel.app/",
       cover: "/navrion/paisaa.png",
-      technologies: ["Next","Genai", "Redux", "TailwindCSS","MongoDB"]
+      technologies: ["Next", "Genai", "Redux", "TailwindCSS", "MongoDB"]
     },
     {
       name: "International Confrence (SCES)",
@@ -81,21 +89,21 @@ export async function fetchLiveProjects() {
       live: true,
       link: "https://confrence-ten.vercel.app/",
       cover: "/navrion/sces.png",
-      technologies: ["html", "php", "javascript","TailwindCSS"]
+      technologies: ["html", "php", "javascript", "TailwindCSS"]
     },
     {
       name: "DISPENSARY REPORT SYSTEM",
       desc: "Helps to create and print dispensary reports for patients in a structured format.",
       link: "https://mnnit-dispensary.vercel.app/",
       cover: "/navrion/disp.png",
-      technologies: ["HTML","Vanilla css", "TailwindCSS"]
+      technologies: ["HTML", "Vanilla css", "TailwindCSS"]
     },
     {
       name: "Patient and Disease Tracking System for Research",
       desc: "get downlaod and store patient disease data for research and analysis.",
       link: "https://patiententry.vercel.app/",
       cover: "/navrion/entry.png",
-      technologies: ["NEXT", "TailwindCSS","NEON","Postgres"]
+      technologies: ["NEXT", "TailwindCSS", "NEON", "Postgres"]
     },
   ];
 }
