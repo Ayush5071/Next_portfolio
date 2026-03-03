@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/ui/Navbar";
 import PageTransition from "@/components/ui/PageTransition";
 import FreelanceProjects from "@/components/FreelanceProjects";
+import PersonalProjects from "@/components/PersonalProjects";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -93,6 +94,9 @@ export default function FreelancePage() {
 
                 {/* The freelance projects gallery */}
                 <FreelanceProjects />
+
+                {/* The personal projects gallery */}
+                <PersonalProjects />
 
                 {/* Final CTA */}
                 <section className="py-24 bg-white border-t border-[#F0F0F0]">
