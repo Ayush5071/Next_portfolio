@@ -30,7 +30,7 @@ const freelanceProjects = [
     },
     {
         title: "Cipher",
-        image: "/projects/cipher.png",
+        image: "/projects/cipher.jpg",
         tech: ["React Native", "Electron.js", "Express"],
         points: [
             "Cross-platform desktop & mobile payroll app",

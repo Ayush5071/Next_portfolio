@@ -1,7 +1,10 @@
 export const navItems = [
-  { name: "Projects", link: "#projects" },
-  { name: "Achievements", link: "#achievements" },
-  { name: "Contact", link: "#contact" },
+  { name: "Home", link: "/" },
+  { name: "Startups", link: "/#startups" },
+  { name: "Projects", link: "/#personal-projects" },
+  { name: "Hire Me", link: "/freelance" },
+  { name: "Experience", link: "/#experience" },
+  { name: "Impact", link: "/#extracurricular" },
 ];
 
 export const gridItems = [
@@ -271,7 +274,7 @@ export const Experiences = [
     linkedin: "#",
     video: "",
     role: "Full Stack Developer — Computer Software Solutions, Kolkata",
-    image: "/navrion/prepsutra.png",
+    image: "/projects/cipher.jpg",
     slideshow_images: [],
   }
 ];

@@ -23,7 +23,7 @@ export async function fetchLiveProjects() {
       desc: "Payroll management system built during internship at Computer Software Solutions, Kolkata.",
       live: false,
       link: "#",
-      cover: "/projects/cipher.png",
+      cover: "/projects/cipher.jpg",
       technologies: ["Next.js", "Express", "MongoDB", "Tailwind CSS"]
     },
     {
